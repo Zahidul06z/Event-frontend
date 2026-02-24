@@ -22,8 +22,8 @@ const SingleBlogPage = () => {
             <h2 className="text-xl font-bold mb-5 md:mt-7 lg:text-3xl lg:mt-15 lg:mb-10">{singleBlog?.title}</h2>
         </div>
         <div className="w-[300px] shadow-xl mb-5 sm:w-[70%]">
-            {singleBlog?.image && <img className="w-fit  mx-auto" src={`/uploads/blog/images/${singleBlog?.image}`} alt="image" />}
-            {singleBlog?.video && <video src={`/uploads/blog/videos/${singleBlog?.video}`} controls />}
+            {singleBlog?.image && <img className="w-fit  mx-auto" src={`https://event-backend-dx9k.vercel.app/uploads/blog/images/${singleBlog?.image}`} alt="image" />}
+            {singleBlog?.video && <video src={`https://event-backend-dx9k.vercel.app/uploads/blog/videos/${singleBlog?.video}`} controls />}
         </div>
         <div className="w-[300px] sm:w-[70%] text-[15px] tracking-normal leading-loose text-justify lg:text-[17px]">
             {lines.map((block, idx) => (

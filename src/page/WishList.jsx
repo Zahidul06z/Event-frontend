@@ -35,7 +35,7 @@ const WishList = () => {
             console.log(product.image)
             return <div className='w-[160px] border-1 border-white bg-gray-100 py-2 shadow-2xl relative sm:w-[250px] md:w-[300px] lg:w-[300px] xl:w-[380px]' key={product?._id}>
                 <Link className='flex flex-col items-center justify-center' to={`/products/${product?._id}`}>
-                    <img className='w-[100px] mb-2 sm:w-[120px] md:w-[200px] lg:w-[250px] xl:w-[300px]' src={`/uploads/product/images/${product.image}`} alt="image" />
+                    <img className='w-[100px] mb-2 sm:w-[120px] md:w-[200px] lg:w-[250px] xl:w-[300px]' src={`https://event-backend-dx9k.vercel.app/uploads/product/images/${product.image}`} alt="image" />
                     <h2 className='uppercase px-1 text-sm font-semibold text-gray-800 text-center lg:text-lg lg:mt-5'>{product?.title}</h2>
                     {/* <h3 className='mt-3 text-gray-800 text-[15px] font-semibold'>{product?.rating}</h3> */}
                     <div className='text-gray-800  mt-1 flex lg:mt-3'>
