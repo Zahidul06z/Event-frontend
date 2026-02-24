@@ -8,7 +8,7 @@ const usePostRatingReviews = (ratings,text,setproductRatingReviews,productId,set
     const handleSubmit = async (e) =>{
         e.preventDefault()
          try {
-            const res = await fetch(`/api/products/ratingreviews/${productId}`, {
+            const res = await fetch(`https://event-backend-dx9k.vercel.app/api/products/ratingreviews/${productId}`, {
                 method: "POST",
                 headers: {
                   "Content-Type": "application/json",

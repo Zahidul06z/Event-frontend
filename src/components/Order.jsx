@@ -72,7 +72,7 @@ const Order = () => {
                             <div className='flex flex-col gap-3 items-center  sm:gap-5 lg:gap-2'>
                                 {getProduct && Object.values(getProduct).map((product)=>{
                                     return <div key={product?._id} className='flex justify-between items-center gap-2   relative sm:gap-5'>
-                                        <img className='w-[70px] h-[90px] sm:w-[70px] sm:mr-3 md:w-[120px] md:h-[150px] lg:w-[70px] lg:h-[100px] lg:-ml-10' src={`/uploads/product/images/${product?.image}`} alt="image" />
+                                        <img className='w-[70px] h-[90px] sm:w-[70px] sm:mr-3 md:w-[120px] md:h-[150px] lg:w-[70px] lg:h-[100px] lg:-ml-10' src={`https://event-backend-dx9k.vercel.app/uploads/product/images/${product?.image}`} alt="image" />
                                         <div className='lg:-ml-5'>
                                             <h2 className='font-semibold text-[15px] capitalize w-[250px] sm:w-[400px] sm:text-[20px] md:w-[510px] md:text-2xl lg:w-[190px] lg:text-sm xl:w-[250px] '>{product?.title}</h2>
                                             <div className=' flex md:mt-3 lg:mt-1'>

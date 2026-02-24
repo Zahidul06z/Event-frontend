@@ -21,7 +21,7 @@ const Registration = ({ setIsLogin }) => {
             e.preventDefault();
             console.log(user)
             try {
-                const res = await fetch("/api/users/registration", {
+                const res = await fetch("https://event-backend-dx9k.vercel.app/api/users/registration", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",

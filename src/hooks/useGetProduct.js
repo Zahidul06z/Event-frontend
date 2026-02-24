@@ -13,7 +13,7 @@ const useGetProduct = (category,searchProduct) => {
     useEffect(()=>{
       const getAllUsers = async()=>{
         try {
-          const res = await fetch(`/api/products/getproduct/${category === null ? 'all' : category}`,{
+          const res = await fetch(`https://event-backend-dx9k.vercel.app/api/products/getproduct/${category === null ? 'all' : category}`,{
             method : "GET",
           })
           let data = await res.json()

@@ -8,7 +8,7 @@ const useCreateComment = (comment,id,setComments,setComment) => {
     const handleSubmit = async (e) =>{
         e.preventDefault()
          try {
-            const res = await fetch(`/api/blogs/comment/${user?._id}/${id}`, {
+            const res = await fetch(`https://event-backend-dx9k.vercel.app/api/blogs/comment/${user?._id}/${id}`, {
                 method: "POST",
                 headers: {
                   "Content-Type": "application/json",

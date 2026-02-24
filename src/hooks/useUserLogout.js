@@ -2,7 +2,7 @@
 const useUserLogout = ({user,logout}) => {
     const handleClik = async()=>{
         try {
-            const res = await fetch("/api/users/logout", {
+            const res = await fetch("https://event-backend-dx9k.vercel.app/api/users/logout", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

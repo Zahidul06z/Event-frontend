@@ -6,7 +6,7 @@ const useLoginWithGoogle = () => {
   const {login} = useContext(AuthContext)
 
   const handleClick = async()=>{
-    window.location.href = 'http://localhost:5000/api/users/auth/google';
+    window.location.href = 'https://event-backend-dx9k.vercel.app/api/users/auth/google';
   }
 
   useEffect(() => {

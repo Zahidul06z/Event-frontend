@@ -16,7 +16,7 @@ const useSubmitCoupon = (coupon,setCoupon) => {
         e.preventDefault()
         setIsLoading(true)
         try {
-            const res = await fetch(`/api/coupons/coupons/apply`, {
+            const res = await fetch(`https://event-backend-dx9k.vercel.app/api/coupons/coupons/apply`, {
                 method: "POST",
                 headers: {
                   "Content-Type": "application/json",

@@ -10,7 +10,7 @@ const useGetCodProduct = (id) => {
   useEffect(() => {
     const getOrderProduct = async () => {
       try {
-        const res = await fetch(`/api/orders/successcod/${id}`, {
+        const res = await fetch(`https://event-backend-dx9k.vercel.app/api/orders/successcod/${id}`, {
           method: 'GET',
           headers: {
             "Content-Type": "application/json",

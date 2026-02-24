@@ -22,7 +22,7 @@ const useAddCoupon = (addCoupon,setAddCoupon) => {
             expiresAt : new Date(addCoupon.date).toISOString()
         }
         try {
-            const res = await fetch(`/api/coupons/addcoupon/${user?._id}`, {
+            const res = await fetch(`https://event-backend-dx9k.vercel.app/api/coupons/addcoupon/${user?._id}`, {
                 method: "POST",
                 headers: {
                   "Content-Type": "application/json",

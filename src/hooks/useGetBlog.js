@@ -10,7 +10,7 @@ const useGetBlog = (searchProduct) => {
     useEffect(()=>{
       const getAllUsers = async()=>{
         try {
-          const res = await fetch('/api/blogs/getblog',{
+          const res = await fetch('https://event-backend-dx9k.vercel.app/api/blogs/getblog',{
             method : "GET",
           })
           let data = await res.json()

@@ -28,7 +28,7 @@ const useOrderProduct = (id,getProduct,coustomerInfo,paymentMethod,delivaryCharg
 
     try {
         const productInfo = getProduct && Object.values(getProduct).map(product=>({id : product._id,quantity : product.quntity}) )
-        const res = await fetch(`/api/orders/${paymentMethod === 'cod' ? 'cod' : 'sslcommerz'}/${id}`,{
+        const res = await fetch(`https://event-backend-dx9k.vercel.app/api/orders/${paymentMethod === 'cod' ? 'cod' : 'sslcommerz'}/${id}`,{
             method: "POST",
                 headers: {
                     "Content-Type": "application/json",

@@ -16,7 +16,7 @@ const useGetTrackProduct = (id) => {
     const getTrackProduct = async()=>{
       setLoading(true)
       try {
-        const res = await fetch(`/api/orders/track/${id}`,{
+        const res = await fetch(`https://event-backend-dx9k.vercel.app/api/orders/track/${id}`,{
           method : "GET",
           headers: {
             "Content-Type": "application/json",

@@ -15,7 +15,7 @@ const PaymentSuccess = () => {
     const fetchPaymentData = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/orders/status/${transactionId}`,{
+          `https://event-backend-dx9k.vercel.app/api/orders/status/${transactionId}`,{
             method: "GET",
           }
           

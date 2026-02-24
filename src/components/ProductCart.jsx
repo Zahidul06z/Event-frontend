@@ -43,7 +43,7 @@ const ProductCart = () => {
             
             {getProduct && Object.values(getProduct).map((product)=>{
                 return <div className='flex justify-center items-center bg-gray-100 w-[340px] px-10 pb-8 pt-5 shadow-md relative border-1 border-white sm:w-[550px] md:w-[650px] lg:w-[480px] xl:w-[550px] ' key={product._id}>
-                <img className='w-[50px] h-[70px]  mr-2 sm:w-[100px] sm:h-[120px] sm:mr-5 md:w-[150px] md:h-[180px] md:mr-7 lg:w-[110px] lg:h-[130px] lg:mr-2' src={`/uploads/product/images/${product.image}`} alt="image" />
+                <img className='w-[50px] h-[70px]  mr-2 sm:w-[100px] sm:h-[120px] sm:mr-5 md:w-[150px] md:h-[180px] md:mr-7 lg:w-[110px] lg:h-[130px] lg:mr-2' src={`https://event-backend-dx9k.vercel.app/uploads/product/images/${product.image}`} alt="image" />
                 <div className='flex flex-col items-center'>
                     <Link to={`/products/${product._id}`} className=' text-sm hover:underline font-semibold w-[270px] sm:text-lg md:w-[440px] md:text-xl lg:w-[350px] xl:w-[400px]'>{product.title}</Link>
                     <div className='  mt-2 flex'>

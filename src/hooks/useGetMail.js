@@ -15,7 +15,7 @@ const useGetMail = () => {
   useEffect(()=>{
     const subCribe = async () =>{
        try {
-        const res = await fetch(`/api/subscribe/getmail`, {
+        const res = await fetch(`https://event-backend-dx9k.vercel.app/api/subscribe/getmail`, {
           method: 'GET',
         })
 

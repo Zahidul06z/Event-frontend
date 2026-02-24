@@ -10,7 +10,7 @@ const useSendMailAllSubscriber = () => {
         console.log('true')
         setLoading(true)
         try {
-            const res = await fetch(`/api/subscribe/sendmailallsubscriber/${user?._id}`, {
+            const res = await fetch(`https://event-backend-dx9k.vercel.app/api/subscribe/sendmailallsubscriber/${user?._id}`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

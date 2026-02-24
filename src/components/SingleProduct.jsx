@@ -76,7 +76,7 @@ const SingleProduct = ({product,desc,reviews,setDesc,setreviews ,rating =0 }) =>
         <div className='flex flex-col justify-self-center items-center w-full '>
             <div className=' flex flex-col items-center justify-center pt-20  text-gray-900 lg:flex-row lg:w-[80%]'>
                 <div className=' w-full   sm:relative '>
-                    <img className='w-full px-4  sm:h-[500px] xl:h-[600px]'  src={`/uploads/product/images/${product?.image}`} alt="image" />
+                    <img className='w-full px-4  sm:h-[500px] xl:h-[600px]'  src={`https://event-backend-dx9k.vercel.app/uploads/product/images/${product?.image}`} alt="image" />
                     
                 </div>
                 <div className='w-full flex flex-col items-center justify-center '>

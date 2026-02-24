@@ -2,7 +2,7 @@
 const useFilter = (setProducts,setToggle,setError) => {
     const handleFilter =async(value)=>{
         try {
-            const res = await fetch(`/api/products//filter/product?first=${value.first}&second=${value?.second}`, {
+            const res = await fetch(`https://event-backend-dx9k.vercel.app/api/products//filter/product?first=${value.first}&second=${value?.second}`, {
                 method: "POST",
             });
             const data = await res.json();

@@ -15,7 +15,7 @@ const useSubscribe = (subscribe,setSubscribe) => {
     const handleSubmit = async(e)=>{
         e.preventDefault()
         try {
-            const res = await fetch(`/api/subscribe/addMail/${user?._id}`, {
+            const res = await fetch(`https://event-backend-dx9k.vercel.app/api/subscribe/addMail/${user?._id}`, {
                 method: "POST",
                 headers: {
                   "Content-Type": "application/json",

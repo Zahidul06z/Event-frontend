@@ -6,7 +6,7 @@ const useGetToRated = () => {
         useEffect(()=>{
           const getAllUsers = async()=>{
             try {
-              const res = await fetch('/api/products/toprated',{
+              const res = await fetch('https://event-backend-dx9k.vercel.app/api/products/toprated',{
                 method : "GET",
               })
               let data = await res.json()

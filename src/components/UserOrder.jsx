@@ -26,7 +26,7 @@ const UserOrder = ({orderProduct}) => {
                     return <div  className='w-full' key={index} >
                                   <div className='flex w-full justify-between items-center bg-gray-100 px-3 py-2 my-5'>
                                     <div className='flex gap-2 justify-between items-center'>
-                                      <img className='w-[60px] md:w-[70px] md:mr-3' src={`/uploads/product/images/${item.image}`} alt="image" />
+                                      <img className='w-[60px] md:w-[70px] md:mr-3' src={`https://event-backend-dx9k.vercel.app/uploads/product/images/${item.image}`} alt="image" />
                                       <div className='flex flex-col'>
                                         <h4 className='w-[200px] text-justify mb-3 md:w-[450px] lg:w-[300px]'>{item.title}</h4>
                                         <div className='flex gap-3 items-center'>

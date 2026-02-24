@@ -52,7 +52,7 @@ const RecentViewd = () => {
             
             return <div className='flex-shrink-0 w-[200px] snap-start border-1 border-white bg-gray-100 py-2 shadow-2xl sm:w-[230px] sm:py-3 md:w-[200px] lg:w-[220px] xl:w-[290px]' key={product?._id}>
                 <Link className='flex flex-col items-center justify-center' to={`/products/${product?._id}`}>
-                    <img className='w-[110px] h-[125px] mb-2 sm:w-[130px] sm:h-[150px] lg:w-[140px] lg:h-[150px] xl:w-[180px] xl:h-[200px]' src={`/uploads/product/images/${product.image}`} alt="image" />
+                    <img className='w-[110px] h-[125px] mb-2 sm:w-[130px] sm:h-[150px] lg:w-[140px] lg:h-[150px] xl:w-[180px] xl:h-[200px]' src={`https://event-backend-dx9k.vercel.app/uploads/product/images/${product.image}`} alt="image" />
                     <h2 className='uppercase px-2 text-md font-semibold text-gray-800 text-center'>{product?.title}</h2>
                     <div className='text-gray-800  mt-2 flex'>
                         <TbCurrencyTaka className='text-[25px]' />

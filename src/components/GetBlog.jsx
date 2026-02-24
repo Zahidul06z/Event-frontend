@@ -36,8 +36,8 @@ const GetBlog = () => {
             {blogs && Object.values(blogs).map((blog)=>{
                 return <div className="w-[330px] border-1 border-gray-300 pb-3 shadow-md flex flex-col items-center relative sm:w-[430px] md:w-[320px] lg:w-[400px] xl:w-[350px]" key={blog?._id}>
                       <Link to={`/blog/${blog?._id}`} className="mb-8 shadow-xl">
-                          {blog?.image && <img className="w-[330px] opacity-70 hover:opacity-100 sm:w-[430px] md:w-[320px] lg:w-[400px] xl:w-[350px]" src={`/uploads/blog/images/${blog?.image}`} alt="image" />}
-                          {blog?.video && <video className="w-[350px] opacity-70 hover:opacity-100" src={`/uploads/blog/videos/${blog?.video}`} controls />}
+                          {blog?.image && <img className="w-[330px] opacity-70 hover:opacity-100 sm:w-[430px] md:w-[320px] lg:w-[400px] xl:w-[350px]" src={`https://event-backend-dx9k.vercel.app/uploads/blog/images/${blog?.image}`} alt="image" />}
+                          {blog?.video && <video className="w-[350px] opacity-70 hover:opacity-100" src={`https://event-backend-dx9k.vercel.app/uploads/blog/videos/${blog?.video}`} controls />}
                       </Link>
                       <h2 className="uppercase font-bold text-lg text-center text-gray-800 mb-3 lg:text-xl">{blog?.title}</h2>
                       <h2 className="text-gray-800 capitalize text-center  px-2 lg:text-[18px]">{blog?.description.slice(0,100)}...</h2>

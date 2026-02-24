@@ -9,7 +9,7 @@ const useGetUserProfile = (id) => {
     useEffect(()=>{
       const getAllUsers = async()=>{
         try {
-          const res = await fetch(`/api/users/getUser/${id}`,{
+          const res = await fetch(`https://event-backend-dx9k.vercel.app/api/users/getUser/${id}`,{
             method : "GET",
             headers: {
               "Content-Type": "application/json",

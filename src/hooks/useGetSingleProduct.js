@@ -13,7 +13,7 @@ const useGetSingleProduct = (productId) => {
         const getAllUsers = async()=>{
           setLoading(true)
           try {
-            const res = await fetch(`/api/products/getSingleProduct/${productId}`,{
+            const res = await fetch(`https://event-backend-dx9k.vercel.app/api/products/getSingleProduct/${productId}`,{
               method : "GET",
             })
             const data = await res.json()
