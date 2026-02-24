@@ -1,14 +1,14 @@
 import React from "react";
 
 const categories = [
-  { id: 1, name: "WOMEN", image: "./public/d1.webp" },
-  { id: 2, name: "MEN", image: "./public/d2.webp" },
-  { id: 3, name: "KIDS", image: "./public/d3.webp" },
-  { id: 4, name: "HOME DECOR", image: "./public/d4.webp" },
-  { id: 5, name: "JEWELLERY", image: "./public/d5.webp" },
-  { id: 6, name: "SKIN & HAIR", image: "./public/d6.webp" },
-  { id: 7, name: "GIFTS & CRAFTS", image: "./public/d7.webp" },
-  { id: 8, name: "WEDDING", image: "./public/d8.webp" },
+  { id: 1, name: "WOMEN", image: "/d1.webp" },
+  { id: 2, name: "MEN", image: "/d2.webp" },
+  { id: 3, name: "KIDS", image: "/d3.webp" },
+  { id: 4, name: "HOME DECOR", image: "/d4.webp" },
+  { id: 5, name: "JEWELLERY", image: "/d5.webp" },
+  { id: 6, name: "SKIN & HAIR", image: "/d6.webp" },
+  { id: 7, name: "GIFTS & CRAFTS", image: "/d7.webp" },
+  { id: 8, name: "WEDDING", image: "/d8.webp" },
 ];
 
 export default function CategoryFullScreen() {

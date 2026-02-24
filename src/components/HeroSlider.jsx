@@ -3,13 +3,13 @@ import { useEffect, useState } from "react";
 const slides = [
   {
     id: 1,
-    image: "./public/f1.webp",
+    image: "/f1.webp",
     // title: "TAAGA WOMEN",
     // subtitle: "Eid / 26",
   },
   {
     id: 2,
-    image: "./public/f2.webp",
+    image: "/f2.webp",
     // title: "TAAGA MAN",
     // subtitle: "Eid / 26",
   },

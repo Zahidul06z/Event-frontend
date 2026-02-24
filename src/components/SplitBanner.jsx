@@ -7,7 +7,7 @@ export default function SplitBanner() {
       {/* LEFT SIDE */}
       <div className="relative w-full lg:w-1/2 h-[60vh] lg:h-screen overflow-hidden group">
         <img
-          src='./public/e1.webp'
+          src='/e1.webp'
           alt="Living"
           className="w-full h-full object-cover transition duration-700 group-hover:scale-110"
         />
@@ -29,7 +29,7 @@ export default function SplitBanner() {
       {/* RIGHT SIDE */}
       <div className="relative w-full lg:w-1/2 h-[60vh] lg:h-screen overflow-hidden group">
         <img
-          src='./public/e2.webp'
+          src='/e2.webp'
           alt="Dining"
           className="w-full h-full object-cover transition duration-700 group-hover:scale-110"
         />

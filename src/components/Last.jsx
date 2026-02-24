@@ -7,7 +7,7 @@ export default function Last() {
       {/* LEFT SIDE */}
       <div className="relative w-full lg:w-1/2 h-[60vh] lg:h-screen overflow-hidden group">
         <img
-          src='./public/b1.webp'
+          src='/b1.webp'
           alt="Living"
           className="w-full h-full object-cover transition duration-700 group-hover:scale-110"
         />
@@ -29,7 +29,7 @@ export default function Last() {
       {/* RIGHT SIDE */}
       <div className="relative w-full lg:w-1/2 h-[60vh] lg:h-screen overflow-hidden group">
         <img
-          src='./public/b2.webp'
+          src='/b2.webp'
           alt="Dining"
           className="w-full h-full object-cover transition duration-700 group-hover:scale-110"
         />

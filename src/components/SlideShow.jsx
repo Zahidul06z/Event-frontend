@@ -5,22 +5,22 @@ import { useEffect, useState } from "react";
 const slides = [
   {
     id: 1,
-    image: './public/a1.webp',
+    image: '/a1.webp',
     
   },
   {
     id: 2,
-    image: './public/a2.webp',
+    image: '/a2.webp',
     
   },
   {
     id: 3,
-    image: './public/a3.webp',
+    image: '/a3.webp',
    
   },
   {
     id: 4,
-    image: './public/a4.webp',
+    image: '/a4.webp',
     
   },
 ];
